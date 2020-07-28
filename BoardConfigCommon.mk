@@ -16,7 +16,7 @@
 
 BOARD_VENDOR := xiaomi
 
-VENDOR_PATH := device/xiaomi/sdm439-common
+PLATFORM_PATH := device/xiaomi/sdm439-common
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
@@ -48,7 +48,7 @@ TW_SKIP_COMPATIBILITY_CHECK := true
 TARGET_BOARD_PLATFORM := msm8937
 
 # Properties
-TARGET_VENDOR_PROP += $(VENDOR_PATH)/vendor.prop
+TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -185,7 +185,7 @@ TARGET_PER_MGR_ENABLED := true
 PROTOBUF_SUPPORTED := false
 
 # Seecomp
-BOARD_SECCOMP_POLICY := $(VENDOR_PATH)/seccomp
+BOARD_SECCOMP_POLICY := $(PLATFORM_PATH)/seccomp
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
